@@ -16,11 +16,27 @@ def index():
 def profile():
     """Return results from profile form."""
 
+
     fullname = request.json['name']
-    # TODO: get the values from the rest of the form
-    # Add them to jsonify
+    age = request.json['age']
+    occupation = request.json['occupation']
+    # salary = request.json['salary']
+    # education = request.json['education']
+    # state = request.json['state']
+    # city = request.json['city']
+    # gardening = request.json['garden']
+    # tv_hours = request.json['tv']
     
-    return jsonify({'fullname': fullname, })
+    return jsonify({'fullname': fullname,
+                    'age': age,
+                    'occupation': occupation,
+                    # 'salary': salary,
+                    # 'education': education,
+                    # 'state': state,
+                    # 'city': city,
+                    # 'gardening': gardening,
+                    # 'tv_hours': tv_hours
+                    })
 
 
 
